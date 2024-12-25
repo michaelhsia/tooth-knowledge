@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>牙科小知識</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="all.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#植牙">植牙</a></li>
+            <li><a href="#假牙">假牙</a></li>
+            <li><a href="#牙周病">牙周病</a></li>
+            <li><a href="#牙齒美白">牙齒美白</a></li>
+            <li><a href="#矯正">矯正</a></li>
+            <li><a href="#根管治療">根管治療</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="container">
       <h1>一起學習一些牙科小知識</h1>
       <div class="add-todo">
+        <select id="category-select">
+          <option value="植牙" selected>植牙</option>
+          <option value="假牙">假牙</option>
+          <option value="牙周病">牙周病</option>
+          <option value="牙齒美白">牙齒美白</option>
+          <option value="矯正">矯正</option>
+          <option value="根管治療">根管治療</option>
+        </select>
         <input type="text" id="new-todo" placeholder="加入新知識" />
         <button id="add-button">Add</button>
       </div>
@@ -17,6 +40,9 @@
         <!-- Todo items will be appended here by JavaScript -->
       </div>
     </div>
-    <script src="script.js"></script>
+    <footer class="footer">
+      <p>&copy; 2025 牙科小知識. All rights reserved.</p>
+    </footer>
+    <script src="all.js"></script>
   </body>
 </html>
