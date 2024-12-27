@@ -6,9 +6,15 @@ body {
   color: #333;
 }
 
+/* header */
 .header {
   background-color: #666; /* Lighten the primary color by 20% */
   padding: 10px 0;
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
 }
 
 .header nav ul {
@@ -43,7 +49,7 @@ body {
 .add-todo select,
 .add-todo input[type="text"] {
   flex-grow: 1;
-  padding: 5px;
+  padding: 10px;
   border-radius: 3px;
   border: 1px solid #ccc;
   margin-right: 10px;
